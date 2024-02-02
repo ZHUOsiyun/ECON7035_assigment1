@@ -20,4 +20,5 @@ if __name__ == '__main__':
     args = parser.parse_args()
 
     cleaned = clean(args.input1, args.input2)
+    print('The shape of the file:', cleaned.shape)
     cleaned.to_csv(args.output, index=False)
